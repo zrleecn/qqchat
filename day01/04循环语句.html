@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>循环语句</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<style type="text/css">
+		.fade-enter-active,
+		.fade-leave-active {
+
+			transition: opacity 0.8s;
+		}
+
+		.fade-enter,
+		.fade-leave-active {
+			opacity: 0;
+		}
+	</style>
+	<body>
+		<div id="app" class="container">
+			<transition name="fade">
+				<template v-if="show">
+					<ul class="list-group" style="margin-top: 15px;">
+						<li v-for="item in todoList" class="list-group-item">
+							{{item.name}}
+							<span class="badge">{{Math.floor(Math.random() * 100 )}}</span>
+							
+						</li>
+					</ul>
+				</template>
+			</transition>
+
+			<div class="btn btn-success" @click="toggleFunc">{{toggle}}</div>
+			
+				
+			<div style="margin-top: 20px;">
+				<p class="h3">msg数据: {{msg}}</p>
+				<!-- v-model 双向数据绑定 -->
+				<p class="text-primary">v-model双向数据绑定</p>
+				<input type="text" name="" id="" class="form-control" v-model="msg" /> <br>
+				<!-- v-bind 单向数据绑定 -->
+				<p class="text-primary">v-bind单向数据绑定</p>
+				<input type="text" name="" id="" class="form-control" v-bind:value="msg" />
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#app",
+			data: {
+				msg: "zrlee.cn",
+				show: true,
+				toggle: "hide",
+				todoList: [{
+						"name": "吃饭"
+					},
+					{
+						"name": "睡觉"
+					},
+					{
+						"name": "打豆豆"
+					},
+				]
+			},
+			methods:{
+				toggleFunc: ()=>{
+					if(app.show){
+						app.toggle = "show"
+						app.show = false
+					}else{
+						app.show = true
+						
+						app.toggle = "hide"
+					}
+					
+				}
+				
+			}
+		})
+	</script>
+</html>

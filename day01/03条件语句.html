@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>条件语句</title>
+		<script src="../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<style type="text/css">
+		.btn{
+			width: 100% !important;
+			height: 30px;
+			margin-top: 10px;
+		}
+		.fade-enter-active,.fade-leave-active{
+			
+			transition:opacity 0.8s;
+		}
+		.fade-enter, .fade-leave-active{
+			opacity: 0;
+		}
+	</style>
+	<body>
+		<div id="app" class="container">
+			<p >
+				<p class="h3" v-bind:title="msg">{{msg}}</p>
+				<input type="text" name="name"  v-bind:value="val" class="form-control" />
+				<div class="btn btn-primary" @click="submit">submit</div>
+			</p>
+			
+			<transition name="fade">
+				<p class="h2 text-success" v-if="complete" >
+					
+					completed!
+				</p>
+			</transition>
+			<transition name="fade">
+				<!-- 使用template /下面可以包括其他的标签 -->
+				<template v-if="complete">
+					<p class="h2 text-success"> completed!</p>
+				</template>
+			</transition>
+			
+		
+		</div>
+		
+		
+	</body>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: "#app", 
+			data: {
+				msg: "微信小程序定制",
+				val: "zrlee.cn",
+				complete: false
+				
+			},
+			methods:{
+				submit: ()=>{
+					// 改变值控制值得显示和隐藏
+					app.complete = !app.complete
+					
+				}
+			}
+			
+		})
+	</script>
+</html>

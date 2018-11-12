@@ -23,7 +23,7 @@
 
 </body>
 <script type="text/javascript">
-	new Vue({
+	var app = new Vue({
 		el: "#app",
 		data: {
 			message: "我是油大zrlee"
@@ -32,8 +32,8 @@
 			test: ()=> {
 				document.write("油大牛逼222")
 			},
-			changeMsg(){
-				this.message = "changed"
+			changeMsg: ()=>{
+				app.message = "changed"
 			}
 		}
 	})
