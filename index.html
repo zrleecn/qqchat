@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<script src="" type="text/javascript" charset="utf-8"></script>
-		<title></title>
-	</head>
-	<body>
-		
-	</body>
+
+<head>
+	<meta charset="utf-8">
+	<script src="./js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+	<title>vue</title>
+</head>
+
+<body>
+	<div id="app">
+		name:{{name}}
+		<br> detail:{{detail()}}
+		<todo-item v-for="item in groceryList" v-bind:todo="item"></todo-item>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+	Vue.component("todo-item", {
+		// todo-item 组件现在接受一个"prop"，类似于一个自定义属性
+		// 这个属性名为 todo。
+		props: ['todo'],
+		template: '<li>食物都有：{{todo.text}}</li>'
+	});
+	new Vue({
+		el: "#app",
+		data: {
+			name: "zrlee.cn",
+			groceryList: [{
+					text: '蔬菜'
+				},
+				{
+					text: '起司'
+				},
+				{
+					text: '米饭'
+				}
+			]
+
+		},
+		methods: {
+			detail: function () {
+				return "https://wx.zrlee.cn"
+			}
+		}
+	})
+</script>
+
 </html>
