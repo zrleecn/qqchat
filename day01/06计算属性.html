@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div id="app" class="container">
+			<ul class="list-group" style="margin-top: 15px;">
+				<li class="list-group-item">
+					原来的msg-->{{msg}}
+				</li>
+				<li class="list-group-item">
+					<!-- 直接转换 -->
+					直接转换--->{{msg.split("").reverse().join("")}}
+					
+					
+				</li>
+				<li class="list-group-item">
+					<!-- 使用函数的形式 -->
+					函数反转后msg--->{{reverseMsg()}}
+				</li>
+				
+				<li class="list-group-item">
+					<!-- 计算属性 -->
+					计算属性反转msg--->{{reverseComputedMsg}}
+				</li>
+			</ul>
+		</div>
+	</body>
+
+	<script type="text/javascript">
+		
+		var app = new Vue({
+			el: "#app",
+			data: {
+				msg: "zrlee.cn",
+				
+			},
+			methods:{
+				test: ()=>{
+					
+				},
+				reverseMsg:function(){
+					console.log(app)
+					return this.msg.split("").reverse().join("")
+					
+				}
+			},
+			// 计算属性
+			computed:{
+				reverseComputedMsg:function (){
+					return this.msg.split("").reverse().join("")
+				}
+			}
+		})
+		
+		
+	</script>
+</html>

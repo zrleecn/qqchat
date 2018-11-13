@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>组件</title>
+		<title></title>
+		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<script src="../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,38 +13,15 @@
 	<body>
 		<div id="app" class="container">
 
-			<ul class="list-group" style="margin-top: 15px;">
-				<zrlee v-for="url in urls" v-bind:object="url">
-
-				</zrlee>
-			</ul>
-
 		</div>
 	</body>
 
 	<script type="text/javascript">
-		Vue.component("zrlee", {
-			props: ['object'],
-			template: "<li class='list-group-item'> <span class='badge'>{{object.index}}</span>{{object.value}}</li>"
-		})
-
+		
 		app = new Vue({
 			el: "#app",
 			data: {
-				urls: [{
-						value: "http://www.zrle.cn",
-						index: 1
-
-					},
-					{
-						value: "https://wx.zrle.cn",
-						index: 2
-					},
-					{
-						value: "http://zrleecn.github.io",
-						index: 3
-					},
-				]
+				
 			}
 		})
 	</script>
