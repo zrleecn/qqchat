@@ -39,7 +39,7 @@
 
 </template>
 
-<script>
+<script type="text/javascript">
   // 导入组件
   import HelloWorld from './components/HelloWorld'
   import Owin from './components/Owin'

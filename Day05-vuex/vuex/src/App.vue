@@ -1,0 +1,34 @@
+<template>
+  <div id="app">
+    <img src="./assets/logo.png">
+    <all-price></all-price>
+    <apple></apple>
+    <Banana></Banana>
+    <!--<router-view/>-->
+  </div>
+</template>
+
+<script>
+import allPrice from './components/allPrice'
+import Apple from './components/Apple'
+import Banana from './components/Banana'
+export default {
+  name: 'App',
+  components: {
+    allPrice,
+    Apple,
+    Banana
+  }
+}
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
