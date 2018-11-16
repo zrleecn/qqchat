@@ -1,14 +1,17 @@
 <template>
     <div>
-      总金额
+      总金额{{allPrice}}
     </div>
 </template>
 
 <script>
 export default {
   name: 'allPrice',
-  data: () => {
-    return {}
+  // 计算属性
+  computed: {
+    allPrice () {
+      return this.$store.state.allPrice
+    }
   }
 }
 </script>
