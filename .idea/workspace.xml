@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2485fb6b-f6ce-4343-80e7-03365a1147cd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/qqchat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qqchat.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuexdemo/vuecli/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vuexdemo/vuecli/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuexdemo/vuecli/src/components/Apple.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuexdemo/vuecli/src/components/Apple.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuexdemo/vuecli/src/components/Banana.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuexdemo/vuecli/src/components/Banana.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuexdemo/vuecli/src/components/allPrice.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vuexdemo/vuecli/src/components/allPrice.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vuexdemo/vuecli/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuexdemo/vuecli/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day04-资料/vue第4节-vuex.md" beforeDir="false" afterPath="$PROJECT_DIR$/Day04-资料/vue第4节-vuex.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day04-资料/vue第六节-resource.md" beforeDir="false" afterPath="$PROJECT_DIR$/Day04-资料/vue第六节-resource.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day05-vuex/vuex/src/components/Apple.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Day05-vuex/vuex/src/components/Apple.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day05-vuex/vuex/src/components/Banana.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Day05-vuex/vuex/src/components/Banana.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day05-vuex/vuex/src/components/allPrice.vue" beforeDir="false" afterPath="$PROJECT_DIR$/Day05-vuex/vuex/src/components/allPrice.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day05-vuex/vuex/src/vuex/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Day05-vuex/vuex/src/vuex/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elm/vuecli/src/components/Owin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elm/vuecli/src/components/Owin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elm/vuecli/src/components/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elm/vuecli/src/components/Profile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elm/vuecli/src/components/SubHelloWorld.vue" beforeDir="false" afterPath="$PROJECT_DIR$/elm/vuecli/src/components/SubHelloWorld.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vuexdemo/vuecli/src/vuex/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/vuexdemo/vuecli/src/vuex/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -103,8 +106,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="365">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -189,6 +192,7 @@
         <option value="$PROJECT_DIR$/vuexdemo/vuecli/src/components/Banana.vue" />
         <option value="$PROJECT_DIR$/vuexdemo/vuecli/src/components/Apple.vue" />
         <option value="$PROJECT_DIR$/vuexdemo/vuecli/src/vuex/index.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -270,15 +274,16 @@
       <updated>1542336830106</updated>
       <workItem from="1542336846062" duration="1923000" />
       <workItem from="1542351921335" duration="7784000" />
-      <workItem from="1542366666657" duration="2414000" />
+      <workItem from="1542366666657" duration="3489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12121000" />
+    <option name="totallyTimeSpent" value="13196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="787" y="95" width="1375" height="858" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2204142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -423,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="365">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
