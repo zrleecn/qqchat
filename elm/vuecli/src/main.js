@@ -6,22 +6,40 @@ import App from './App'
 import Router from 'vue-router'
 import OWin from './components/Owin'
 import Profile from './components/Profile'
+import HelloWorld from './components/HelloWorld'
+import SubHelloWorld from './components/SubHelloWorld'
 Vue.config.productionTip = false
 // 使用
 Vue.use(Router)
 
 // 实例化
 
-var router = new Router({
-	routers :[
+const router = new Router({
+  // URL 改变时候
+  mode : "history",
+	routes :[
 		{
 			path: "/Owin",
-			component:OWin
+			component:OWin,
 		},
 		{
 			path:"/Profile",
-			components:Profile
-		}
+			component:Profile
+		},
+		{
+			path:"/HelloWorld",
+			component:HelloWorld,
+			children:[
+				{
+					path:"/SubHelloWorld",
+					component:SubHelloWorld
+				}
+			]
+		},
+    {
+      path: "/Owin/:name",
+      component:OWin,
+    },
 	]
 })
 
@@ -34,5 +52,6 @@ new Vue({
   	App
 
    },
-  template: '<App/>'
+  template: '<App/>',
+
 })

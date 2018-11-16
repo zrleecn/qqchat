@@ -2,6 +2,7 @@
 <template>
 
 <div class="wrap">
+<img src="https://wx.zrlee.cn/img/me.png" >
 	<h1>Profile, {{user}}</h1>
 </div>
 	

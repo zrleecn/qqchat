@@ -3,6 +3,7 @@
 
 <div class="wrap">
 	<h1>你好， {{user}}</h1>
+  <div @click="getParams"> 获取参数</div>
 </div>
 	
 </template>
@@ -18,7 +19,10 @@
 			}
 		},
 		methods:{
-			
+      getParams(){
+        // 获取参数
+        console.log(this.$route.params)
+      }
 		}
 	}
 

@@ -1,7 +1,14 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+
+    <div @click="getQuery">getQuery</div>
+     <!-- 相当于子视图容器 -->
+    <router-view></router-view>
+
   </div>
+
+
 </template>
 
 <script>
@@ -10,6 +17,11 @@ export default {
   data () {
     return {
       msg: 'github.com/zrleecn'
+    }
+  },
+  methods: {
+    getQuery(){
+      console.log(this.$route.query)
     }
   }
 }
